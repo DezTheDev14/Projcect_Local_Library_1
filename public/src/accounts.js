@@ -1,18 +1,15 @@
-// Passed
 function findAccountById(accounts, id) {
   const specificAccount = accounts.find((account) => account.id === id)
   return specificAccount
 }
 
 
-// Passed
 function sortAccountsByLastName(accounts) {
   const lastNameSort = accounts.sort((accountA, accountB) => (accountA.name.last > accountB.name.last ? 1 : -1))
   return lastNameSort
 }
 
 
-// Passed
 function getTotalNumberOfBorrows(account, books) {
   let borrowCounter = 0
   for (let i = 0; i < books.length; i++) {
@@ -27,7 +24,6 @@ function getTotalNumberOfBorrows(account, books) {
 }
 
 
-// Passed
 function getBooksPossessedByAccount(account, books, authors) {
   let booksPossessedByAccount = []
   for (let i = 0; i < books.length; i++) {
