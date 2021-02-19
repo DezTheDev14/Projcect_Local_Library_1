@@ -1,18 +1,15 @@
-// Passed
 function findAuthorById(authors, id) {
   const specificAuthor = authors.find((author) => author.id === id)
   return specificAuthor
 }
 
 
-// Passed
 function findBookById(books, id) {
   const specificBook = books.find((book) => book.id === id)
   return specificBook
 }
 
 
-// Passed
 function partitionBooksByBorrowedStatus(books) {
   let partitionedBooks = []
   const notReturnedBooks = books.filter((book) => book.borrows[0].returned === false)
@@ -22,7 +19,6 @@ function partitionBooksByBorrowedStatus(books) {
 }
 
 
-// Passed
 function getBorrowersForBook(book, accounts) {
   let borrowersForBook = []
   for (let i = 0; i < book.borrows.length; i++) {
